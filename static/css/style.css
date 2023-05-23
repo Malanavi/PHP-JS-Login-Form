@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+* {
+  font-family: "poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://avatars.mds.yandex.net/i?id=708debbb96310a21b66ecfb3eb766eca_l-5180512-images-thumbs&n=13");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 0 15px;
+  position: relative;
+}
+
+.input-field .input {
+  height: 45px;
+  width: 87%;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  padding: 0 0 0 45px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  transition: 0.3s;
+}
+i {
+  position: relative;
+  top: -33px;
+  left: 17px;
+  color: #fff;
+}
+::-webkit-input-placeholder {
+  color: #fff;
+}
+.submit {
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  height: 45px;
+  outline: none;
+  width: 100%;
+  color: black;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.submit:hover {
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+label a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.error {
+  border: 1px solid #de3535 !important;
+}
+
+a {
+  color: #e4bdff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+p {
+  color: #fff;
+}
+
+.user__avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+.user__name {
+  color: #fff;
+  text-align: center;
+}
+.user__logout-btn {
+  display: inline;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  background: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+  text-align: center;
+  padding: 10px 0;
+}
+.user__logout-btn:hover {
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.animation-block {
+  position: fixed;
+  top: 10%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  background-color: #4ad2531b;
+  border: 2px solid #85c333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  animation-name: fadeOut;
+  animation-duration: 10s;
+  color: #fff;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .animation-block {
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    transform: none;
+  }
+}
